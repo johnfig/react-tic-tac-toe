@@ -1,4 +1,5 @@
-var React = require('react')
+var React = require('react'),
+    ReactDOM = require('react-dom')
 
 class Square extends React.Component {
   render() {
@@ -81,4 +82,3 @@ function calculateWinner(squares) {
   }
   return null;
 }
-
