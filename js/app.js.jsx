@@ -2,9 +2,16 @@ var React = require('react'),
     ReactDOM = require('react-dom')
 
 class Square extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      value: null,
+    };
+  }
   render() {
     return (
-      <button className="square" onClick={() => alert('new world')}>
+      <button className="square" onClick={() => this.setState({value: 'X'})}>
+        {this.state.value}
       </button>
     );
   }
