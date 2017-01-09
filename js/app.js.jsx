@@ -4,8 +4,7 @@ var React = require('react'),
 class Square extends React.Component {
   render() {
     return (
-      <button className="square">
-        {/* TODO */}
+      <button className="square" onClick={() => alert('new world')}>
       </button>
     );
   }
